@@ -16,8 +16,8 @@
 
 header .logo {
       float: right;
-      margin-right: 1200px;
-      margin-top: -200px;
+      margin-right: 1240px;
+      margin-top: -180px;
       }
 
 header nav {
@@ -25,7 +25,7 @@ header nav {
       }
 
 header nav ul {
-       margin-top: -150px;
+       margin-top: -80px;
        margin-left: 200px
        
        }
@@ -63,7 +63,6 @@ p     {
       }
 
 h1    { 
-/*      padding-right: -20px; */
       background-color:#6495ed;
       margin-top: 200px;
       }
@@ -73,7 +72,6 @@ h1    {
       margin-right: 825px;
       padding: 8px;
       padding-right: 30px;
-      margin-top: 900px;
       padding-left: 80px;
       font-family:Georgia, "Times New Roman", Times, serif;
       }
