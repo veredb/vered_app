@@ -5,15 +5,15 @@ VeredApp::Application.routes.draw do
   get "pages/home"
   get "pages/about"
   get "pages/chemistry"
-  get "pages/discussions"
+#  get "pages/discussions"
   get "pages/other"
 #  match '/new' => 'users#new', via: [:post, :get]
   match '/index' => 'users#index', via: [:post, :get]
-#  match 'pages/discussions' => 'index'
+  match 'pages/discussions'  => 'users#index', via: [:post, :get]
   match '/home' => 'pages#home', via: [:post, :get]
   match '/about' => 'pages#about', via: [:post, :get]
   match '/chemistry' => 'pages#chemistry', via: [:post, :get]
-  match '/discussions' => 'pages#discussions', via: [:post, :get]
+#  match '/discussions' => 'pages#discussions', via: [:post, :get]
   match '/other' => 'pages#other', via: [:post, :get]
   root :to => 'pages#home'
   # The priority is based upon order of creation: first created -> highest priority.
