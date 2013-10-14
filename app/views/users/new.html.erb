@@ -1,0 +1,15 @@
+<h1>New</h1>
+
+<p>here is the discussion page</p>
+
+
+<%= form_for(@user) do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.label :comment %>
+    <%= f.text_area :comment %>
+    <%= f.submit 'submit' %>
+<% end %>
+
+
+<%= @user.name %>

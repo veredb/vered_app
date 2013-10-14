@@ -1,0 +1,19 @@
+
+<h1>article here</h1>
+
+
+<% @users.each do |user| %>
+
+<%= user.name %><%= user.comment %>
+
+<% end %>
+
+
+<%= form_for(@user) do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.label :comment %>
+    <%= f.text_area :comment %>
+    <%= f.submit 'submit' %>
+<% end %>
+
