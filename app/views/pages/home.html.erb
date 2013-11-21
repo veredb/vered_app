@@ -1,2 +1,31 @@
-<h1>Pages#home</h1>
-<p>This is the home page</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>javascript Example</title>
+        <script>
+
+        $(document).ready(function(){        
+
+        $('#btnSlideUp').click(function()
+        {
+           $('#slideMe').slideUp('slow');
+        });
+        $('#btnSlideDown').click(function()
+        {
+           $('#slideMe').slideDown('slow');
+        });
+
+        });
+    </script>
+
+  </head>
+  <body>
+    <h1>Home</h1>
+    <div id="slideMe">This will appear and disappear</div>
+    <input type="button" id="btnSlideUp" value="Slide Up">
+    <input type="button" id="btnSlideDown" value="Slide Down">
+  </body>
+</html>
+
+
+
