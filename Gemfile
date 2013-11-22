@@ -16,7 +16,9 @@ gem 'uglifier', '>= 1.3.0'
 group :test, :development do
     gem 'rspec-rails', '~> 2.8'
 end
-
+group :production, :staging do
+      gem 'rails_12factor'
+end
 
 group :test do
     gem 'webrat', '0.7.1'
