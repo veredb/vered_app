@@ -1,13 +1,17 @@
 VeredApp::Application.routes.draw do
-
   resources :users
-  get "users/new"
+  resources :posts
+#  get "users/new"
   get "pages/home"
   get "pages/about"
   get "pages/chemistry"
-  get "pages/blog"
+#  get "pages/blog"
 #  get "pages/discussions"
   get "pages/other"
+  get "posts/new"
+  get "posts/create"
+  get "/posts/show"
+  get "posts/index"
 #  match '/new' => 'users#new', via: [:post, :get]
   match '/index' => 'users#index', via: [:post, :get]
   match 'pages/discussions'  => 'users#index', via: [:post, :get]
@@ -16,6 +20,10 @@ VeredApp::Application.routes.draw do
   match '/chemistry' => 'pages#chemistry', via: [:post, :get]
 #  match '/discussions' => 'pages#discussions', via: [:post, :get]
   match '/other' => 'pages#other', via: [:post, :get]
+  match 'pages/blog'  => 'posts#new', via: [:post, :get]
+
+
+
   root :to => 'pages#home'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
