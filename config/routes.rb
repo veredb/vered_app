@@ -5,6 +5,7 @@ VeredApp::Application.routes.draw do
   get "pages/home"
   get "pages/about"
   get "pages/chemistry"
+  get "pages/blog"
 #  get "pages/discussions"
   get "pages/other"
 #  match '/new' => 'users#new', via: [:post, :get]
