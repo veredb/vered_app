@@ -2,10 +2,9 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
-gem 'pg', '~>0.15.1'
 # Use mysql as the database for Active Record
-#gem "ruby-mysql"
 #gem 'mysql'
+gem 'mysql2'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -15,9 +14,14 @@ gem 'uglifier', '>= 1.3.0'
 
 group :test, :development do
     gem 'rspec-rails', '~> 2.8'
+  #  gem "ruby-mysql"
+ #   gem 'mysql'
 end
 group :production, :staging do
       gem 'rails_12factor'
+#      gem 'pg', '~>0.15.1'
+#      gem "ruby-mysql"
+#      gem 'mysql'
 end
 
 group :test do
