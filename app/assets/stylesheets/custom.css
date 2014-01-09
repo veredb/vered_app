@@ -1,5 +1,5 @@
 .container {
-      margin-top: -8px;
+      margin-top: 0px;
       margin-left: -4px;
       width: 960px;
       }
@@ -17,7 +17,7 @@
 header .logo {
       float: right;
       margin-right: 1075px;
-      margin-top: -135px;
+      margin-top: -140px;
       }
 
 header nav {
@@ -57,7 +57,7 @@ body  {
 p     {
       float: right;
       background-color:#b0c4be;
-      margin-top: 100px;
+      margin-top: 20px;
       margin-right: 300px;
       padding: 50px;
       }
@@ -79,6 +79,27 @@ h1    {
 h2    {
       background-color: #ffffff;
       }
+.box_cont{
+      float: left;
+      }
+.box1, .box2, .box3{
+      padding: 2px;
+      }
+.box1 {
+      float: left;
+      margin-left: 20px;
+      }
+.box2 {
+      float: left;
+      margin-left: -430px;
+      margin-top: 100px;
+      }
+.box3 {
+      float: left;
+      margin-left: -450px;
+      margin-top: 200px;
+      }
+      
       
 /* footer Navigation bar */
 
