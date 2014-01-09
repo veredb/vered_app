@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140108192346) do
+ActiveRecord::Schema.define(version: 20140109191038) do
+
+  create_table "opinions", force: true do |t|
+    t.string   "opinionator"
+    t.text     "body"
+    t.integer  "post_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "opinions", ["post_id"], name: "index_opinions_on_post_id", using: :btree
 
   create_table "posts", force: true do |t|
     t.string   "title"

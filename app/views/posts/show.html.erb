@@ -8,3 +8,32 @@
   <strong>Text:</strong>
   <%= @post.text %>
 </p>
+
+
+<h2>Your Opinion</h2>
+<% @post.opinions.each do |opinion| %>
+  <p>
+    <strong>Opinionator:</strong>
+    <%= opinion.opinionator %>
+  </p>
+ 
+  <p>
+    <strong>Opinion:</strong>
+    <%= opinion.body %>
+  </p>
+<% end %>
+ 
+<h2>Add a opinion:</h2>
+<%= form_for([@post, @post.opinions.build]) do |f| %>
+  <p class="box_opin1">
+    <%= f.label :opinionator %><br />
+    <%= f.text_field :opinionator %>
+  </p>
+  <p class="box_opin2">
+    <%= f.label :body %><br />
+    <%= f.text_area :body %>
+  </p>
+  <p class="box_opin3">
+    <%= f.submit %>
+  </p>
+<% end %>

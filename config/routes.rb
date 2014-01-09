@@ -1,6 +1,9 @@
 VeredApp::Application.routes.draw do
   resources :users
-  resources :posts
+#  resources :posts
+   resources :posts do
+      resources :opinions
+   end
 #  get "users/new"
   get "pages/home"
   get "pages/about"
