@@ -1,20 +1,18 @@
 <h1>Programming language for building synthetic DNA</h1>
 <p>Like the use of the computer scientists and the Java programming language Python to writing computer code, chemists will be able to quickly use the collection set of instructions to "programming" the behavior of DNA molecules in a test tube or cell. 
 A research team from the University of Washington has succeeded in developing a programming language for chemists would allow them to accelerate the development of a network able to direct the behavior of chemical reactions in the same way that electronic controllers Mkoweinim the operation of vehicles, robots and other devices. In medicine, such networks could be used as a sophisticated system to transport drugs or sensors for detecting diseases at the cellular level. The study appears in the cult - the journal Nature Nanotechnology.</p>
-
-
 <% @users.each do |user| %>
-
-<%= user.name %><%= user.comment %><br />
-
-<% end %>
-
-
+<div id="box">
+  <strong>Name:</strong><%= user.name %><br />
+  <strong>Comment:</strong><%= user.comment %><br />
+</div>
+<% end %><br />
+<strong>Add Your Comment</strong>
 <%= form_for(@user) do |f| %>
     <%= f.label :name %><br />
     <%= f.text_field :name %><br />
     <%= f.label :comment %><br />
     <%= f.text_area :comment %><br />
     <%= f.submit 'submit' %>
-<% end %>
+<% end %><br />
 

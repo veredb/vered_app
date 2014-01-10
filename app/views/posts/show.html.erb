@@ -1,39 +1,26 @@
 <h1>The Post</h1>
-<p class="box1">
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
- 
-<p class="box2">
+  <div id="box_text">
+  <strong>Title:</strong>
+  <%= @post.title %><br />
   <strong>Text:</strong>
-  <%= @post.text %>
-</p>
+  <%= @post.text %><br />
+  </div>
 
-
-<h2>Your Opinion</h2>
+<h2>Opinions</h2>
 <% @post.opinions.each do |opinion| %>
-  <p>
+   <div id="box">
     <strong>Opinionator:</strong>
-    <%= opinion.opinionator %>
-  </p>
- 
-  <p>
+    <%= opinion.opinionator %><br />
     <strong>Opinion:</strong>
-    <%= opinion.body %>
-  </p>
+    <%= opinion.body %><br />
+  </div>
 <% end %>
- 
-<h2>Add a opinion:</h2>
+
+<h2>Add an opinion:</h2>
 <%= form_for([@post, @post.opinions.build]) do |f| %>
-  <p class="box_opin1">
-    <%= f.label :opinionator %><br />
+    <%= f.label :opinionator %>
     <%= f.text_field :opinionator %>
-  </p>
-  <p class="box_opin2">
-    <%= f.label :body %><br />
+    <%= f.label :body %>
     <%= f.text_area :body %>
-  </p>
-  <p class="box_opin3">
     <%= f.submit %>
-  </p>
 <% end %>
