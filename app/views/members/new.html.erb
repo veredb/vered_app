@@ -1,0 +1,14 @@
+<h1>Newsletter Page</h1>
+<p>Fill in your information to get a news letter</p>
+
+
+<%= form_for(@member) do |f| %>
+    <%= f.label :myname %>
+    <%= f.text_field :myname %>
+    <%= f.label :email %>
+    <%= f.text_area :email %>
+    <%= f.label :login %>
+    <%= f.text_field :login %>
+    <%= f.submit 'submit' %>
+<% end %>
+
