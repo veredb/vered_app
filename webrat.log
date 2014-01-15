@@ -11,3 +11,9 @@ D, [2014-01-15T10:22:59.264149 #27974] DEBUG -- : REQUESTING PAGE: GET /posts wi
 D, [2014-01-15T10:22:59.334775 #27974] DEBUG -- : REQUESTING PAGE: GET /posts with {} and HTTP headers {}
 D, [2014-01-15T10:24:30.267110 #27975] DEBUG -- : REQUESTING PAGE: GET /posts with {} and HTTP headers {}
 D, [2014-01-15T10:24:30.352532 #27975] DEBUG -- : REQUESTING PAGE: GET /posts with {} and HTTP headers {}
+D, [2014-01-15T10:31:27.956556 #27995] DEBUG -- : REQUESTING PAGE: GET /posts/new with {} and HTTP headers {}
+D, [2014-01-15T10:31:28.070614 #27995] DEBUG -- : REQUESTING PAGE: POST /posts with {"utf8"=>"✓", "post"=>{"title"=>"golf", "text"=>"i love golf"}, "commit"=>"Create Post"} and HTTP headers {"HTTP_REFERER"=>"/posts/new"}
+D, [2014-01-15T10:31:28.083372 #27995] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/posts/1 with {} and HTTP headers {"HTTP_REFERER"=>"/posts"}
+D, [2014-01-15T10:31:28.159870 #27995] DEBUG -- : REQUESTING PAGE: GET /posts/new with {} and HTTP headers {}
+D, [2014-01-15T10:31:28.167798 #27995] DEBUG -- : REQUESTING PAGE: POST /posts with {"utf8"=>"✓", "post"=>{"title"=>"", "text"=>""}, "commit"=>"Create Post"} and HTTP headers {"HTTP_REFERER"=>"/posts/new"}
+D, [2014-01-15T10:31:28.174891 #27995] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/posts/2 with {} and HTTP headers {"HTTP_REFERER"=>"/posts"}

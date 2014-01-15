@@ -7,9 +7,9 @@ describe "Posts" do
         end
         it "should not make a new post" do
           lambda do
-            visit posts_path
-            fill_in :posts_title,                        :with => @attr[:title]
-            fill_in :posts_text,                         :with => @attr[:text]
+            visit new_post_path
+            fill_in :post_title,                        :with => @attr[:title]
+            fill_in :post_text,                         :with => @attr[:text]
             click_button 
             response.should render_template('posts/new')
            end.should_not change(Post, :count).by(0) 
@@ -23,9 +23,9 @@ describe "Posts" do
 
         it "should make a new post" do
           lambda do
-            visit posts_path
-            fill_in :posts_title,                        :with => @attr[:title]
-            fill_in :posts_text,                         :with => @attr[:text]
+            visit new_post_path
+            fill_in :post_title,                        :with => @attr[:title]
+            fill_in :post_text,                         :with => @attr[:text]
             click_button 
             response.should render_template('posts/new')
           end.should change(Post, :count).by(1)
