@@ -18,6 +18,7 @@ VeredApp::Application.routes.draw do
 #  match '/new' => 'users#new', via: [:post, :get]
   match '/index' => 'users#index', via: [:post, :get]
   match 'pages/discussions'  => 'users#index', via: [:post, :get]
+  get "pages/discussions"
   match '/home' => 'pages#home', via: [:post, :get]
   match '/about' => 'pages#about', via: [:post, :get]
   match '/chemistry' => 'pages#chemistry', via: [:post, :get]

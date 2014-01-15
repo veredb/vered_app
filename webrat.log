@@ -1,0 +1,13 @@
+# Logfile created on 2014-01-15 10:09:18 -0600 by logger.rb/31641
+D, [2014-01-15T10:09:18.803117 #27923] DEBUG -- : REQUESTING PAGE: GET /posts with {} and HTTP headers {}
+D, [2014-01-15T10:09:18.885161 #27923] DEBUG -- : REQUESTING PAGE: GET /posts with {} and HTTP headers {}
+D, [2014-01-15T10:14:34.927442 #27956] DEBUG -- : REQUESTING PAGE: GET /posts with {} and HTTP headers {}
+D, [2014-01-15T10:14:34.978790 #27956] DEBUG -- : REQUESTING PAGE: GET /posts with {} and HTTP headers {}
+D, [2014-01-15T10:16:32.810102 #27966] DEBUG -- : REQUESTING PAGE: GET /posts with {} and HTTP headers {}
+D, [2014-01-15T10:16:32.898914 #27966] DEBUG -- : REQUESTING PAGE: GET /posts with {} and HTTP headers {}
+D, [2014-01-15T10:22:21.209724 #27972] DEBUG -- : REQUESTING PAGE: GET /posts with {} and HTTP headers {}
+D, [2014-01-15T10:22:21.261034 #27972] DEBUG -- : REQUESTING PAGE: GET /posts with {} and HTTP headers {}
+D, [2014-01-15T10:22:59.264149 #27974] DEBUG -- : REQUESTING PAGE: GET /posts with {} and HTTP headers {}
+D, [2014-01-15T10:22:59.334775 #27974] DEBUG -- : REQUESTING PAGE: GET /posts with {} and HTTP headers {}
+D, [2014-01-15T10:24:30.267110 #27975] DEBUG -- : REQUESTING PAGE: GET /posts with {} and HTTP headers {}
+D, [2014-01-15T10:24:30.352532 #27975] DEBUG -- : REQUESTING PAGE: GET /posts with {} and HTTP headers {}

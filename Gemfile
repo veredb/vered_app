@@ -14,6 +14,8 @@ gem 'uglifier', '>= 1.3.0'
 
 group :test, :development do
     gem 'rspec-rails', '~> 2.8'
+    gem 'factory_girl_rails', '1.0'
+    gem 'webrat', '0.7.1'
   #  gem "ruby-mysql"
  #   gem 'mysql'
 end
